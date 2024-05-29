@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "src\SisParWebPages\WebApi\WebApi.csproj", "{256E9016-13C4-457A-BBD2-7724304754E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "src\SisParWebPages\WebApi\WebApi.csproj", "{256E9016-13C4-457A-BBD2-7724304754E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "src\SisParWebPages\Persistence\Persistence.csproj", "{6E77F3EF-7267-48AF-9295-7EFCA1ED439F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "src\SisParWebPages\Persistence\Persistence.csproj", "{6E77F3EF-7267-48AF-9295-7EFCA1ED439F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\SisParWebPages\Application\Application.csproj", "{7612806A-404B-4B30-A2AE-F553CABF6DDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\SisParWebPages\Application\Application.csproj", "{7612806A-404B-4B30-A2AE-F553CABF6DDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\SisParWebPages\Domain\Domain.csproj", "{79D3FBB1-293F-4AA2-9CE6-EA4BA351C814}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\SisParWebPages\Domain\Domain.csproj", "{79D3FBB1-293F-4AA2-9CE6-EA4BA351C814}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\SisParWebPages\Infrastructure\Infrastructure.csproj", "{A281B1D7-0ABB-43E5-AE6A-2D05AD996937}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\SisParWebPages\Infrastructure\Infrastructure.csproj", "{A281B1D7-0ABB-43E5-AE6A-2D05AD996937}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSisPar", "src\WebSisPar\WebSisPar.csproj", "{74FF7D75-9AD2-4AEA-BB3F-1C45F9BAD0B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSisParApi", "src\WebSisParApi\WebSisParApi.csproj", "{6B5D72F3-AAE9-4676-A1F4-92F82B9C2AFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{A281B1D7-0ABB-43E5-AE6A-2D05AD996937}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A281B1D7-0ABB-43E5-AE6A-2D05AD996937}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A281B1D7-0ABB-43E5-AE6A-2D05AD996937}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74FF7D75-9AD2-4AEA-BB3F-1C45F9BAD0B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FF7D75-9AD2-4AEA-BB3F-1C45F9BAD0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74FF7D75-9AD2-4AEA-BB3F-1C45F9BAD0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74FF7D75-9AD2-4AEA-BB3F-1C45F9BAD0B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B5D72F3-AAE9-4676-A1F4-92F82B9C2AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B5D72F3-AAE9-4676-A1F4-92F82B9C2AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B5D72F3-AAE9-4676-A1F4-92F82B9C2AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B5D72F3-AAE9-4676-A1F4-92F82B9C2AFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
