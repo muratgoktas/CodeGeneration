@@ -1,6 +1,8 @@
-﻿namespace WebSisParApi.Dto.CategoryDto
+﻿using WebSisParApi.Dto.CategoryDto;
+
+namespace WebSisParApi.Dto.CategoryDtos
 {
-    public class ResultCategoryDto
+    public class GetByIdCategoryDto
     {
         public int Id { get; set; }
         public string Name { get; set; }
