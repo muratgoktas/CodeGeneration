@@ -1,0 +1,28 @@
+﻿@model List<WebSisPar.Models.Products>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_DefaultLayout.cshtml";
+}
+<h4>Ürünler</h4>
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Ürün Adı</th>
+        <th>Ürün Başlığı</th>
+        <th>Ürün Açıklaması</th>
+        
+        <th>Fiyat</th>
+    </tr>
+    @foreach(var p in Model)
+    {
+        <tr>
+            <td>@p.Id</td>
+            <td>@p.Name</td>
+            <td>@p.Title</td>
+            <td>@p.Description</td>
+            <td>@p.Price</td>
+        </tr>
+    }
+</table>
+<button class="btn btn-warning">Tablo Listesi</button>
+
