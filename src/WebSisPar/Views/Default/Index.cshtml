@@ -2,6 +2,7 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_DefaultLayout.cshtml";
+  
 }
 <h4>Ürünler</h4>
 <table class="table table-bordered">
@@ -15,6 +16,7 @@
     </tr>
     @foreach(var p in Model)
     {
+     
         <tr>
             <td>@p.Id</td>
             <td>@p.Name</td>
@@ -23,6 +25,10 @@
             <td>@p.Price</td>
         </tr>
     }
+
+    
+    
 </table>
 <button class="btn btn-warning">Tablo Listesi</button>
+
 

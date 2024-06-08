@@ -86,6 +86,57 @@ hr {
   border-top-width: 1px; /* 3 */
 }
 
+.mcs {
+    width: 300px;
+    height: 260px;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-left: 50px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -o-border-radius: 15px;
+    -moz-border-radius: 15px;
+    color: white;
+    font-weight: bolder;
+    box-shadow: inset -4px -4px rgba(0,0,0,0.5);
+    font-size: 18px;
+}
+
+    .mcs input[type="text"] {
+        width: 200px;
+        height: 35px;
+        padding-left: 5px;
+        border: 0px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -o-border-radius: 5px;
+        -moz-border-radius: 5 px;
+    }
+
+    .mcs input[type="password"] {
+        width: 200px;
+        height: 35px;
+        padding-left: 5px;
+        border: 0px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -o-border-radius: 5px;
+        -moz-border-radius: 5 px;
+    }
+
+    .mcs input[type="submit"] {
+        width: 100px;
+        height: 35px;
+        border: 0px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -o-border-radius: 5px;
+        -moz-border-radius: 5 px;
+        background-color: skyblue;
+        font-weight: bolder;
+    }
 /*
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
@@ -1019,6 +1070,10 @@ h1,  h2,  h3,  h4,  h5,  h6{
 }
 .zd\/2{
   width: 50%;
+}
+.zd\/3 {
+    
+    width: 225;
 }
 ._d{
   width: -moz-fit-content;
