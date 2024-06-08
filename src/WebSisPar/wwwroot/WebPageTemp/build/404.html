@@ -17,7 +17,7 @@
     <header
   class="g s r vd ya cj"
   :class="{ 'hh sm _k dj bl ll' : stickyMenu }"
-  @scroll.window="stickyMenu = (window.pageYOffset > 20) ? true : false"
+  &#64scroll.window="stickyMenu = (window.pageYOffset > 20) ? true : false"
 >
   <div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
     <div class="vd to/4 tc wf yf">
@@ -302,8 +302,8 @@
     <!-- ====== Back To Top Start ===== -->
     <button
   class="xc wf xf ie ld vg sr gh tr g sa ta _a"
-  @click="window.scrollTo({top: 0, behavior: 'smooth'})"
-  @scroll.window="scrollTop = (window.pageYOffset > 50) ? true : false"
+  &#64click="window.scrollTo({top: 0, behavior: 'smooth'})"
+  &#64scroll.window="scrollTop = (window.pageYOffset > 50) ? true : false"
   :class="{ 'uc' : scrollTop }"
 >
   <svg class="uh se qd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

@@ -1,0 +1,46 @@
+﻿
+@{
+    Layout = null;
+    
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 | Base - Tailwind CSS Startup Template</title>
+    <link rel="icon" href="~/WebPageTemp/build/images/SisParIcon.ico">
+    <link href="~/WebPageTemp/build/style.css" rel="stylesheet">
+
+</head>
+<body x-data="{ page: '404', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
+      x-init="
+      darkMode=JSON.parse(localStorage.getItem('darkMode'));
+      $watch('darkMode', value=>
+    localStorage.setItem('darkMode', JSON.stringify(value)))"
+    :class="{'b eh': darkMode === true}"
+    >
+    <!-- ===== Header Start ===== -->
+    @await Html.PartialAsync("_PartialHeader")
+
+    <!-- ===== Header End ===== -->
+
+    <main>
+        <!-- ===== 404 Start ===== -->
+         @RenderBody()
+        <!-- ===== 404 End ===== -->
+    </main>
+    <!-- ===== Footer Start ===== -->
+    @await Html.PartialAsync("_PartialFooter")
+
+    <!-- ===== Footer End ===== -->
+    <!-- ====== Back To Top Start ===== -->
+    @await Html.PartialAsync("_PartialBackToTopStart")
+
+    <!-- ====== Back To Top End ===== -->
+    <script defer src="~/WebPageTemp/build/bundle.js"></script>
+</body>
+</html>
+
