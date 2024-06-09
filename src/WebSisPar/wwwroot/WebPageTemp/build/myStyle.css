@@ -454,6 +454,7 @@ video {
   height: auto;
 }
 
+
 body{
   position: relative;
   z-index: 1;
@@ -561,6 +562,10 @@ h1,  h2,  h3,  h4,  h5,  h6{
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+.imglogo {
+    max-width: 300px;
+    height: auto;
 }
 .a{
   left: -1.875rem;
