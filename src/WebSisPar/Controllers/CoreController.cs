@@ -12,5 +12,10 @@ namespace WebSisPar.Controllers
         {
             return View();
         }
+		public IActionResult Support()
+		{
+			return View();
+		}
+        
     }
 }

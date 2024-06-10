@@ -36,8 +36,10 @@ namespace WebSisPar.Controllers
 
 
             };
+			ViewBag.LogoPath = "~/WebPageTemp/build/images/SisPar-Light.png";
+			return View(product);
+           
 
-            return View(product);
-        }
+		}
     }
 }
