@@ -9,7 +9,8 @@ namespace WebSisParApi.Repositories.CategoryRepository
     public class CategoryRepository : ICategoryRepository
     {
         private readonly Context  _context;
-
+        // ToDo : Dapper kısmı buradan başlıyor.
+        // ToDo : Dapper NuGetten install et.
         public CategoryRepository(Context context)
         {
             _context = context;

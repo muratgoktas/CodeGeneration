@@ -4,7 +4,8 @@ using WebSisParApi.Repositories.ProductRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// ToDo: Add services to the container.
+// ToDo: Context, ICategoryRepository isterse CategoryRepository ver ve New yap.
 builder.Services.AddTransient<Context>();
 builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
 builder.Services.AddTransient<IProductRepository,ProductRepository>();

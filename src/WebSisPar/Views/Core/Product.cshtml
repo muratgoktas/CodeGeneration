@@ -10,31 +10,7 @@
     <div class="bb ye ki xn vq jb jo">
         <div class="wc qf pn xo zf iq">
             <!-- Blog Item -->
-            <div class="animate_top sg vk rm xm">
-                <div class="c rc i z-1 pg">
-                    <img class="w-full" src="~/WebPageTemp/build/images/blog-01.png" alt="Blog" />
-
-                    <div class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10">
-                        <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi">Read More</a>
-                    </div>
-                </div>
-
-                <div class="yh">
-                    <div class="tc uf wf ag jq">
-                        <div class="tc wf ag">
-                            <img src="~/WebPageTemp/build/images/icon-man.svg" alt="User" />
-                            <p>Musharof Chy</p>
-                        </div>
-                        <div class="tc wf ag">
-                            <img src="~/WebPageTemp/build/images/icon-calender.svg" alt="Calender" />
-                            <p>25 Dec, 2025</p>
-                        </div>
-                    </div>
-                    <h4 class="ek tj ml il kk wm xl eq lb">
-                        <a href="blog-single.html">Free advertising for your online business</a>
-                    </h4>
-                </div>
-            </div>
+            @await Component.InvokeAsync("_ProductsDatasBlogItemViewComponentPartial")
 
             <!-- Blog Item -->
             <div class="animate_top sg vk rm xm">
@@ -230,27 +206,6 @@
 </section>
 <!-- ===== Blog Grid End ===== -->
 <!-- ===== CTA Start ===== -->
-<section class="i pg gh ji">
-    <!-- Bg Shape -->
-    <img class="h p q" src="~/WebPageTemp/build/images/shape-16.svg" alt="Bg Shape" />
-
-    <div class="bb ye i z-10 ki xn dr">
-        <div class="tc uf sn tn un gg">
-            <div class="animate_left to/2">
-                <h2 class="fk vj zp pr lk ac">
-                    Join with 5000+ Startups Growing with Base.
-                </h2>
-                <p class="lk">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur leo. Ut venenatis rhoncus.
-                </p>
-            </div>
-            <div class="animate_right bf">
-                <a href="#" class="vc ek kk hh rg ol il cm gi hi">
-                    Get Started Now
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+@await Component.InvokeAsync("CTAStartBannerViewComponentPartial")
 
 <!-- ===== CTA End ===== -->

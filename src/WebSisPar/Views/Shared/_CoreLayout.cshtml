@@ -5,16 +5,10 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SisPar Teknoloji | Güvenlik Sistemleri</title>
-    <link rel="icon" href="~/WebPageTemp/build/images/SisParIcon.ico">
-    <link href="~/WebPageTemp/build/myStyle.css" rel="stylesheet">
-    <link href="~/WebPageTemp/build/Tailwind.css" rel="stylesheet">
+<!-- ===== Head Start ===== -->
+@await Component.InvokeAsync("_HeadViewComponentPartial")
+<!-- ===== Head End ===== -->
 
-</head>
 <body x-data="{ page: '404', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
       x-init="
       darkMode=JSON.parse(localStorage.getItem('darkMode'));
@@ -23,7 +17,11 @@
     :class="{'b eh': darkMode === true}"
     >
     <!-- ===== Header Start ===== -->
-    @await Html.PartialAsync("_PartialHeader")
+     
+    <!--ToDo: Çalışırken browsorde kod gözükmez-->
+    @await Component.InvokeAsync("_HeaderViewComponentPartial")
+    <!--ToDo: Çalışırken browsorde kod gözükür-->
+    @*await Html.PartialAsync("_PartialHeader")*@
 
     <!-- ===== Header End ===== -->
 
@@ -33,11 +31,13 @@
         <!-- ===== 404 End ===== -->
     </main>
     <!-- ===== Footer Start ===== -->
-    @await Html.PartialAsync("_PartialFooter")
+    @await Component.InvokeAsync("_FooterViewComponentPartial")
+    @*await Html.PartialAsync("_PartialFooter")*@
 
     <!-- ===== Footer End ===== -->
     <!-- ====== Back To Top Start ===== -->
-    @await Html.PartialAsync("_PartialBackToTopStart")
+    @await Component.InvokeAsync("_BackToTopStartViewComponentPartial")
+    @*await Html.PartialAsync("_PartialBackToTopStart")*@
 
     <!-- ====== Back To Top End ===== -->
     <script defer src="~/WebPageTemp/build/bundle.js"></script>

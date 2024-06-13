@@ -1,4 +1,4 @@
-﻿namespace WebSisParApi.Dto.CategoryDtos
+﻿namespace WebSisParApi.Dtos.ProductDtos
 {
     public class ResultProductWithCategoryDto
     {

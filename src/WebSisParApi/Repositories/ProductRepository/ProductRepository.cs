@@ -1,8 +1,8 @@
 ﻿using Dapper;
 using WebApi.Models.DapperContext;
 using WebSisParApi.Dto.CategoryDto;
-using WebSisParApi.Dto.CategoryDtos;
 using WebSisParApi.Dto.ProductDtos;
+using WebSisParApi.Dtos.ProductDtos;
 
 namespace WebSisParApi.Repositories.ProductRepository
 {
