@@ -19,6 +19,7 @@ namespace WebSisPar.ViewComponents.Layout
             //ToDO: Canlılya taşıdığımızda bu api adresi revize edilmesi lazım
             //ToDO: Aşağıdaki adresi sagger UI dan aldık.
             var responseMessage = await client.GetAsync("https://localhost:44334/api/Products/ProducListWithCategory");
+
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData=await responseMessage.Content.ReadAsStringAsync();
