@@ -7,11 +7,13 @@
 
 <!-- ===== Blog Grid Start ===== -->
 <section class="ji gp uq">
-    <div class="bb ye ki xn vq jb jo">
+    <div class="bb ye ki xn vq jb jo" >
         <div class="wc qf pn xo zf iq">
             <!-- Blog Item -->
             @await Component.InvokeAsync("_ProductsDatasBlogItemViewComponentPartial")
-@*   
+          
+@*
+            @await Component.InvokeAsync("_MoviBannerBlogViewComponentPartial")
             <!-- Blog Item -->
             <div class="animate_top sg vk rm xm">
                 <div class="c rc i z-1 pg">
@@ -206,6 +208,6 @@
 </section>
 <!-- ===== Blog Grid End ===== -->
 <!-- ===== CTA Start ===== -->
-@await Component.InvokeAsync("CTAStartBannerViewComponentPartial")
+@await Component.InvokeAsync("_CTAStartBannerViewComponentPartial")
 
 <!-- ===== CTA End ===== -->

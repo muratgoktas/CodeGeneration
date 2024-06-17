@@ -1,7 +1,7 @@
 ﻿using WebApi.Models.DapperContext;
-using WebSisParApi.Dto.CategoryDto;
+using WebSisParApi.Dtos.CategoryDtos;
 using Dapper;
-using WebSisParApi.Dto.CategoryDtos;
+using WebSisParApi.Dtos.CategoryDtos;
 using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace WebSisParApi.Repositories.CategoryRepository

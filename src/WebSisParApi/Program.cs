@@ -1,9 +1,11 @@
 using WebApi.Models.DapperContext;
+using WebSisPar.Services;
 using WebSisParApi.Repositories.AboutReposiory;
 using WebSisParApi.Repositories.CategoryRepository;
 using WebSisParApi.Repositories.ProductRepository;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 // ToDo: Add services to the container.
 // ToDo: Context, ICategoryRepository isterse CategoryRepository ver ve New yap.

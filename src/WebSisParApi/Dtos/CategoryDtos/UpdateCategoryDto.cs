@@ -1,4 +1,4 @@
-﻿namespace WebSisParApi.Dto.CategoryDto
+﻿namespace WebSisParApi.Dtos.CategoryDtos
 {
     public class UpdateCategoryDto
     {

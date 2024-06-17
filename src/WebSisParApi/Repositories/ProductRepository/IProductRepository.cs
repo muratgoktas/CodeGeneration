@@ -1,4 +1,4 @@
-﻿using WebSisParApi.Dto.ProductDtos;
+﻿using WebSisParApi.Dtos.ProductDtos;
 using WebSisParApi.Dtos.ProductDtos;
 
 namespace WebSisParApi.Repositories.ProductRepository

@@ -22,10 +22,11 @@
     @await Component.InvokeAsync("_HeaderViewComponentPartial")
     <!--ToDo: Çalışırken browsorde kod gözükür-->
     @*await Html.PartialAsync("_PartialHeader")*@
-
+    @*await Component.InvokeAsync("_ChangeLanguageViewComponentPartial")*@
     <!-- ===== Header End ===== -->
 
     <main>
+        
         <!-- ===== 404 Start ===== -->
         @RenderBody()
         <!-- ===== 404 End ===== -->

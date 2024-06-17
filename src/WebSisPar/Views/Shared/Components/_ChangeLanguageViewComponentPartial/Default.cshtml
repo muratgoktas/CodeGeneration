@@ -1,0 +1,35 @@
+﻿
+
+<li>
+    <div class="dropdown">
+        <button type="button"
+                class="btn btn-primary dropdown-toggle"
+                data-bs-toggle="dropdown">
+            Localization
+        </button>
+        <ul class="dropdown-menu">
+            <li>
+                <a asp-controller="Core"
+                   asp-action="ChangeLanguage"
+                   asp-route-culture="en-US"
+                   class="dropdown-item">
+                    <i class="flag-icon flag-icon-gb"></i> English
+                </a>
+            </li>
+            <li>
+                <a asp-controller="Core"
+                   asp-action="ChangeLanguage"
+                   asp-route-culture="fr-FR"
+                   class="dropdown-item">
+                    <i class="flag-icon flag-icon-gb"></i> French
+                </a>
+                <a asp-controller="Core"
+                   asp-action="ChangeLanguage"
+                   asp-route-culture="tr-TR"
+                   class="dropdown-item">
+                    <i class="flag-icon flag-icon-gb"></i> Türkçe
+                </a>
+            </li>
+        </ul>
+    </div>
+</li>

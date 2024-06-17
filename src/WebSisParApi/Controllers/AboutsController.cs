@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using WebSisParApi.Dto.CategoryDto;
-using WebSisParApi.Dtos.AboutDto;
+using WebSisParApi.Dtos.CategoryDtos;
 using WebSisParApi.Repositories.AboutReposiory;
 using WebSisParApi.Repositories.CategoryRepository;
+using WebSisParApi.Dtos.AboutDtos;
 
 namespace WebSisParApi.Controllers
 {

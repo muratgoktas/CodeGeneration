@@ -134,9 +134,21 @@
         <div class="bh ch pm tc uf sf yo wf xf ap cg fp bj">
             <div class="animate_top">
                 <ul class="tc wf gg">
-                    <li><a href="#" class="xl">English</a></li>
-                    <li><a href="#" class="xl">Privacy Policy</a></li>
-                    <li><a href="#" class="xl">Support</a></li>
+                    <li>
+                        <a asp-controller="Core" asp-action="ChangeLanguage"
+                           asp-route-culture="en-US" English
+                           class="xl">English</a>
+                    </li>
+                    <li>
+                        <a asp-controller="Core" asp-action="ChangeLanguage"
+                           asp-route-culture="fr-FR"
+                           class="xl">Français</a>
+                    </li>
+                    <li>
+                        <a asp-controller="Core" asp-action="ChangeLanguage"
+                           asp-route-culture="tr-TR"
+                           class="xl">Türkçe </a>
+                    </li>
                 </ul>
             </div>
 

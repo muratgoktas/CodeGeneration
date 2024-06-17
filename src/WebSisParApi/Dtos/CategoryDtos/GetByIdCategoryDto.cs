@@ -1,6 +1,6 @@
-﻿using WebSisParApi.Dto.CategoryDto;
+﻿
 
-namespace WebSisParApi.Dto.CategoryDtos
+namespace WebSisParApi.Dtos.CategoryDtos
 {
     public class GetByIdCategoryDto
     {

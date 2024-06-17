@@ -2,7 +2,7 @@
 
 namespace WebSisPar.ViewComponents.Layout
 {
-    public class CTAStartBannerViewComponentPartial:ViewComponent
+    public class _ChangeLanguageViewComponentPartial:ViewComponent
     {
         public IViewComponentResult Invoke()
         {

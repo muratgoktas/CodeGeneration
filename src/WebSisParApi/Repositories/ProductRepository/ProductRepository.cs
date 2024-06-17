@@ -1,7 +1,7 @@
 ﻿using Dapper;
 using WebApi.Models.DapperContext;
-using WebSisParApi.Dto.CategoryDto;
-using WebSisParApi.Dto.ProductDtos;
+using WebSisParApi.Dtos.CategoryDtos;
+using WebSisParApi.Dtos.ProductDtos;
 using WebSisParApi.Dtos.ProductDtos;
 
 namespace WebSisParApi.Repositories.ProductRepository
@@ -28,7 +28,8 @@ namespace WebSisParApi.Repositories.ProductRepository
 
         public async Task<List<ResultProductWithCategoryDto>> GetAllProductWithCategoryAsync()
         {
-            string query = "Select Product.Id,Product.Title,Product.Price,City,Product.District,Category.Name from dbo.Product inner join dbo.Category on " +
+            string query = "Select Product.Id,Product.Title,Product.Price,City,Product.District,Product.CoverImage,Product.Description,"+
+                "Category.Name from dbo.Product inner join dbo.Category on " +
                 " Product.CategoryId =Category.Id  ";
 
             using (var connection = _context.CreateConnecon())

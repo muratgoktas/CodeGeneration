@@ -1,5 +1,5 @@
-﻿using WebSisParApi.Dto.CategoryDto;
-using WebSisParApi.Dto.CategoryDtos;
+﻿using WebSisParApi.Dtos.CategoryDtos;
+using WebSisParApi.Dtos.CategoryDtos;
 
 namespace WebSisParApi.Repositories.CategoryRepository
 {

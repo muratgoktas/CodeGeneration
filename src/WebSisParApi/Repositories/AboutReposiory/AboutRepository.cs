@@ -1,8 +1,8 @@
 ﻿using Dapper;
 using WebApi.Models.DapperContext;
-using WebSisParApi.Dto.CategoryDto;
-using WebSisParApi.Dto.CategoryDtos;
-using WebSisParApi.Dtos.AboutDto;
+using WebSisParApi.Dtos.CategoryDtos;
+using WebSisParApi.Dtos.CategoryDtos;
+using WebSisParApi.Dtos.AboutDtos;
 
 namespace WebSisParApi.Repositories.AboutReposiory
 {
@@ -17,11 +17,15 @@ namespace WebSisParApi.Repositories.AboutReposiory
 
         public async void CreateAbout(CreateAboutDto createAboutDto)
         {
-            string query = "insert into dbo.About (Title,Subtitle,Description) values(@title,@subtitle,@description)";
+            string query = "insert into dbo.About (Title,Subtitle,Description,VideoLink,PictureLink01,PictureLink02,PictureLink03)" +
+                " values(@title,@subtitle,@description,@pictureLink01,@pictureLink02,@pictureLink03)";
             var parameters = new DynamicParameters();
             parameters.Add("@title", createAboutDto.Title);
             parameters.Add("@subtitle", createAboutDto.Subtitle);
             parameters.Add("@description", createAboutDto.Description);
+            parameters.Add("@pictureLink01", createAboutDto.PictureLink01);
+            parameters.Add("@pictureLink02", createAboutDto.PictureLink02);
+            parameters.Add("@pictureLink03", createAboutDto.PictureLink03);
 
             using (var connection = _context.CreateConnecon())
             {
@@ -65,11 +69,16 @@ namespace WebSisParApi.Repositories.AboutReposiory
 
         public async void UpdateAbout(UpdateAboutDto updateAboutDto)
         {
-            var query = "Update About set Title = @title, Subtitle=@subtitle,Description = @description Where Id =@id";
+            var query = "Update About set Title = @title, Subtitle=@subtitle,Description = @description"
+                + "PictureLink01=@pictureLink01, PictureLink02 =@pictureLink02, PictureLink03=@pictureLink03"
+                + " Where Id =@id";
             var parameters = new DynamicParameters();
             parameters.Add("@title", updateAboutDto.Title);
             parameters.Add("@subtitle", updateAboutDto.Subtitle);
             parameters.Add("@description", updateAboutDto.Description);
+            parameters.Add("@pictureLink01", updateAboutDto.PictureLink01);
+            parameters.Add("@pictureLink02", updateAboutDto.PictureLink02);
+            parameters.Add("@pictureLink03", updateAboutDto.PictureLink03);
             parameters.Add("@id", updateAboutDto.Id);
             using (var connecion = _context.CreateConnecon())
             {

@@ -1,6 +1,6 @@
-﻿using WebSisParApi.Dto.CategoryDto;
-using WebSisParApi.Dto.CategoryDtos;
-using WebSisParApi.Dtos.AboutDto;
+﻿using WebSisParApi.Dtos.CategoryDtos;
+using WebSisParApi.Dtos.CategoryDtos;
+using WebSisParApi.Dtos.AboutDtos;
 
 namespace WebSisParApi.Repositories.AboutReposiory
 {
