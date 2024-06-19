@@ -27,7 +27,7 @@ namespace WebSisParApi.Controllers
              _categoryRepository.CreateCategory(createCategoryDto);
             return Ok("Category added.");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {
             _categoryRepository.DeleteCategory(id);
