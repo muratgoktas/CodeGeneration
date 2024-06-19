@@ -29,6 +29,18 @@ namespace WebSisPar.Controllers
 		{
 			return View();
 		}
+        public IActionResult SignIn()
+        {
+            return View();
+        }
+        public IActionResult SignUp()
+        {
+            return View();
+        }
+        public IActionResult Solutation()
+        {
+            return View();
+        }
         public IActionResult ChangeLanguage(string culture)
         {
             Response.Cookies.Append(CookieRequestCultureProvider.DefaultCookieName,

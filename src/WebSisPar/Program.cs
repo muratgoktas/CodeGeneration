@@ -22,9 +22,11 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
 {
     var supportCultures = new List<CultureInfo>
     {
+        new CultureInfo("tr-TR"),
+        new CultureInfo("az-AZ"),
         new CultureInfo("en-US"),
         new CultureInfo("fr-FR"),
-        new CultureInfo("tr-TR"),
+        new CultureInfo("ar-SA"),
     };
     options.DefaultRequestCulture = new RequestCulture(culture: "tr-TR", uiCulture: "tr-TR");
     options.SupportedCultures = supportCultures;

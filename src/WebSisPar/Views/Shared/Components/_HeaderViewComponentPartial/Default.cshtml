@@ -43,6 +43,7 @@
                     <li><a href="Feature" class="xl">@_localization.GetKey("Features").Value</a></li>
                     <li><a href="Product" class="xl">@_localization.GetKey("Products").Value</a></li>
                     <li><a href="Support" class="xl">@_localization.GetKey("Support").Value</a></li>
+                    <li><a href="Solutation" class="xl">@_localization.GetKey("Solutations").Value</a></li>
                     <li class="c i" x-data="{ dropdown: false }">
                         <a href="#"
                            class="xl tc wf yf bg"
@@ -56,17 +57,29 @@
                         </a>
                         <!-- Dropdown Start -->
                         <ul class="a" :class="{ 'tc': dropdown }">
+                            <li>
+                                <a asp-controller="Core" asp-action="ChangeLanguage"
+                                   asp-route-culture="tr-TR" Türkçe
+                                   class="xl">Türkçe</a>
+                            </li>
+                           @* <li> 
+                                <a asp-controller="Core" asp-action="ChangeLanguage"
+                                   asp-route-culture="az-AZ"
+                                   class="xl">Azerbeycan Türkcə</a>
+                            </li>*@
                             <li> <a asp-controller="Core" asp-action="ChangeLanguage"
-                                    asp-route-culture="en-US"  English
+                                    asp-route-culture="en-US"  
                                    class="xl" >English</a>
                             </li>
                             <li> <a asp-controller="Core" asp-action="ChangeLanguage"
                                     asp-route-culture="fr-FR"
-                                   class="xl" >Français</a>
+                                   class="xl" >Français
+                               </a>
                             </li>
-                            <li> <a asp-controller="Core" asp-action="ChangeLanguage"
-                                    asp-route-culture="tr-TR"
-                                    class="xl" >Türkçe </a>
+                            <li>
+                                <a asp-controller="Core" asp-action="ChangeLanguage"
+                                   asp-route-culture="ar-SA"
+                                    class="xl"> عربي </a>
                             </li>
                         </ul>
                         @*       <a href="#"
@@ -113,8 +126,8 @@
                     </label>
                 </div>
 
-                <a href="~/WebPageTemp/build/signin.html" :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }" class="ek pk xl">@_localization.GetKey("Sign In").Value</a>
-                <a href="~/WebPageTemp/build/signup.html" :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' && stickyMenu }" class="lk gh dk rg tc wf xf _l gi hi">@_localization.GetKey("Sign Up").Value</a>
+                <a href="SignIn" :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }" class="ek pk xl">@_localization.GetKey("Sign In").Value</a>
+                <a href="SignUp" :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' && stickyMenu }" class="lk gh dk rg tc wf xf _l gi hi">@_localization.GetKey("Sign Up").Value</a>
             </div>
         </div>
     </div>

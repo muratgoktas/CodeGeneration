@@ -117,11 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Burglar Alarm Systems" xml:space="preserve">
+    <value>Hırsız Alarm Sistemleri</value>
+  </data>
+  <data name="By clicking “Sign up”, you agree to our terms of service and acknowledge you have read our privacy policy." xml:space="preserve">
+    <value>"Kaydol"a tıklayarak hizmet şartlarımızı kabul etmiş ve gizlilik politikamızı okuduğunuzu onaylamış olursunuz.</value>
+  </data>
+  <data name="Camera Systems" xml:space="preserve">
+    <value>Kamera Sistemleri</value>
+  </data>
   <data name="Change Language" xml:space="preserve">
     <value>Dil Değiştir</value>
   </data>
   <data name="Features" xml:space="preserve">
     <value>Hakkımızda</value>
+  </data>
+  <data name="Fire Protection Systems" xml:space="preserve">
+    <value>Yangın Koruma Sistemleri</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Anasayfa</value>
@@ -129,11 +141,26 @@
   <data name="Let’s Stay Connected" xml:space="preserve">
     <value>İletişimde Kalalım!</value>
   </data>
+  <data name="Mikro Accounting Program" xml:space="preserve">
+    <value>Mikro Muhasebe Programı</value>
+  </data>
+  <data name="Privacy Policy" xml:space="preserve">
+    <value>Gizlilik Politikamız</value>
+  </data>
   <data name="Products" xml:space="preserve">
     <value>Ürünler</value>
   </data>
+  <data name="Security systems" xml:space="preserve">
+    <value>Güvenlik Sistemleri</value>
+  </data>
+  <data name="SEE HOW WE WORK" xml:space="preserve">
+    <value>NASIL ÇALIŞTIĞIMIZI GÖRÜN</value>
+  </data>
   <data name="Sign In" xml:space="preserve">
     <value>Oturumu Aç</value>
+  </data>
+  <data name="Sign in to your Account" xml:space="preserve">
+    <value>Hesabınıza giriş yapın</value>
   </data>
   <data name="Sign Out" xml:space="preserve">
     <value>Oturumu Kapat</value>
@@ -141,14 +168,24 @@
   <data name="Sign Up" xml:space="preserve">
     <value>Üye Ol</value>
   </data>
+  <data name="Solutations" xml:space="preserve">
+    <value>Çözümler</value>
+  </data>
   <data name="Support" xml:space="preserve">
     <value>İletişim/Destek</value>
+  </data>
+  <data name="TALEPON PLATFORM&#xD;&#xA;Workflow &amp; Special Software Tracking Management" xml:space="preserve">
+    <value>TALEPON PLATFORMU
+İş Akış &amp; Özel Yazılım Takip Yönetimi</value>
+  </data>
+  <data name="Terms of Service /" xml:space="preserve">
+    <value>Hizmet Şartlarımız /</value>
   </data>
   <data name="We Make Our customers happy by giving Best services." xml:space="preserve">
     <value>Müşterilerimize Amatör Ruh ile Profesyonel Hizmetler Sunuyoruz.</value>
   </data>
   <data name="We offer our services professionally with an amateur spirit, acting in accordance with our customer-oriented company culture, vision and mission." xml:space="preserve">
-    <value>Müşteri odaklı firma kültürümüz ile vizyon ve misyonumuza uygun hareket ederek hizmetlerimizi amatör bir ruh ile profesyönel olarak sunmaktayız.</value>
+    <value>Müşteri odaklı firma kültürümüz ile vizyon ve misyonumuza uygun hareket ederek hizmetlerimizi amatör bir ruh ile profesyonel olarak sunmaktayız.</value>
   </data>
   <data name="Why Choose Us" xml:space="preserve">
     <value>Neden Bizi Tercih Etmelisiniz?</value>

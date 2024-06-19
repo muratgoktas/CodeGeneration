@@ -16,7 +16,7 @@ namespace WebSisPar.Services
         {
             var type = typeof(SharedResource);
             var assamblyName = new AssemblyName(type.GetTypeInfo().Assembly.FullName);
-            _localizer = factory.Create(nameof(SharedResource), assamblyName.Name);// yerini ve konumunu göstrir.
+            _localizer = factory.Create(nameof(SharedResource), assamblyName.Name);// yerini ve konumunu gösterir.
 
         }
         public LocalizedString GetKey(string key)

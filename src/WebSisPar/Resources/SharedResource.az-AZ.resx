@@ -117,77 +117,55 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Burglar Alarm Systems" xml:space="preserve">
-    <value>Systèmes d'alarme antivol</value>
-  </data>
   <data name="By clicking “Sign up”, you agree to our terms of service and acknowledge you have read our privacy policy." xml:space="preserve">
-    <value>En cliquant sur « S'inscrire », vous acceptez nos conditions d'utilisation et reconnaissez avoir lu notre politique de confidentialité.</value>
-  </data>
-  <data name="Camera Systems" xml:space="preserve">
-    <value>Systèmes de Caméras</value>
+    <value>“Qeydiyyatdan keç” düyməsini klikləməklə, siz xidmət şərtlərimizlə razılaşırsınız və məxfilik siyasətimizi oxuduğunuzu qəbul edirsiniz.</value>
   </data>
   <data name="Change Language" xml:space="preserve">
-    <value>Changer de langue</value>
+    <value>Dili dəyişdirin</value>
   </data>
   <data name="Features" xml:space="preserve">
-    <value>Caractéristiques</value>
-  </data>
-  <data name="Fire Protection Systems" xml:space="preserve">
-    <value>Systèmes de protection contre les incendies</value>
+    <value>Xüsusiyyətləri</value>
   </data>
   <data name="Home" xml:space="preserve">
-    <value>Page d'accueil</value>
+    <value>Əsas səhifə</value>
   </data>
   <data name="Let’s Stay Connected" xml:space="preserve">
-    <value>Restons Connectés</value>
-  </data>
-  <data name="Mikro Accounting Program" xml:space="preserve">
-    <value>Programme de comptabilité Mikro</value>
+    <value>Bağlı Qalıq</value>
   </data>
   <data name="Privacy Policy" xml:space="preserve">
-    <value>Notre Politique de Confidentialité</value>
+    <value>Gizlilik Siyasəti</value>
   </data>
   <data name="Products" xml:space="preserve">
-    <value>Produits</value>
-  </data>
-  <data name="Security systems" xml:space="preserve">
-    <value>Systèmes de sécurité</value>
+    <value>Məhsullar</value>
   </data>
   <data name="SEE HOW WE WORK" xml:space="preserve">
-    <value>VOIR COMMENT NOUS TRAVAILLONS</value>
+    <value>GÖRÜN NECƏ İŞLƏYİRİK</value>
   </data>
   <data name="Sign In" xml:space="preserve">
-    <value>Se Connecter</value>
+    <value>Daxil ol</value>
   </data>
   <data name="Sign in to your Account" xml:space="preserve">
-    <value>Connectez-vous à votre compte</value>
+    <value>Hesabınıza daxil olun</value>
   </data>
   <data name="Sign Out" xml:space="preserve">
-    <value>Se Déconnecter</value>
+    <value>Çıxış</value>
   </data>
   <data name="Sign Up" xml:space="preserve">
-    <value>S'inscrire</value>
-  </data>
-  <data name="Solutations" xml:space="preserve">
-    <value>Solutions</value>
+    <value>Abunə olun</value>
   </data>
   <data name="Support" xml:space="preserve">
-    <value>Soutien</value>
-  </data>
-  <data name="TALEPON PLATFORM&#xD;&#xA;Workflow &amp; Special Software Tracking Management" xml:space="preserve">
-    <value>PLATEFORME TALEPON
-Gestion du flux de travail et du suivi des logiciels spéciaux</value>
+    <value>Dəstək</value>
   </data>
   <data name="Terms of Service /" xml:space="preserve">
-    <value>Nos Conditions d'utilisation /</value>
+    <value>Xidmət Şərtləri /</value>
   </data>
   <data name="We Make Our customers happy by giving Best services." xml:space="preserve">
-    <value>Nous rendons nos clients heureux en offrant les meilleurs services.</value>
+    <value>Ən yaxşı xidmətləri göstərməklə müştərilərimizi sevindiririk</value>
   </data>
   <data name="We offer our services professionally with an amateur spirit, acting in accordance with our customer-oriented company culture, vision and mission." xml:space="preserve">
-    <value>Nous proposons nos services de manière professionnelle avec un esprit amateur, en agissant conformément à notre culture, notre vision et notre mission d'entreprise orientées client.</value>
+    <value>Müştəriyönümlü şirkət mədəniyyətimizə, vizyonumuza və missiyamıza uyğun olaraq, həvəskar ruhla peşəkarcasına xidmətlərimizi təklif edirik.</value>
   </data>
   <data name="Why Choose Us" xml:space="preserve">
-    <value>Pourquoi Ous Choisir</value>
+    <value>Niyə Bizi Seçin</value>
   </data>
 </root>

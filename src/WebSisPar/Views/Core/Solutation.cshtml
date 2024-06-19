@@ -1,0 +1,169 @@
+﻿
+@{
+    ViewData["Title"] = "Solutation";
+    Layout = "~/Views/Shared/_CoreLayout.cshtml";
+}
+
+<!-- Pricing Table -->
+<div class="bb ze i va ki xn yq bc">
+    <div class="wc qf pn xo jg">
+        <template x-for="(plan, i) in plans" x-key="i">
+            <!-- Pricing Item -->
+            <div class="animate_top rj sg hh sm vk xm hi nj oj">
+                <h4 x-text="plan.name" class="wj kk wm fb"></h4>
+
+                <div class="tc wf xf kg cc">
+                    <h2 :class="plan.name == 'Basic' ? 'text-green-500' : ''"
+                        x-text="`$${billPlan == 'monthly' ? plan.price.monthly : plan.price.annually}`"
+                        class="fk _j kk wm"></h2>
+                    <span x-text="billPlan == 'monthly' ? '/per month' : '/per year'" class="sc ak kk wm"></span>
+                </div>
+
+                <p class="ur dc">No credit card required</p>
+
+                <!-- Button -->
+                <a href="#"
+                   class="ek rg lk ml il gi ri"
+                   :class="plan.name == 'Growth Plan' ? 'gh sl' : 'mh tl'">
+                    Try for free
+                </a>
+
+                <!-- Features -->
+                <ul class="tc sf bg ob fb">
+                    <template x-for="(feature, i) in plan.features" x-key="i">
+                        <li x-text="feature"></li>
+                    </template>
+                </ul>
+
+                <p class="kk wm">7-day free trial</p>
+            </div>
+        </template>
+    </div>
+</div>
+      </section>
+<!-- ===== Pricing Table End ===== -->
+<!-- ===== Projects Start ===== -->
+<section class="pg pj vp mr oj wp nr">
+    <!-- Section Title Start -->
+    <div x-data="{ sectionTitle: `We Offer Great Affordable Premium Prices.`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}">
+        <div class="animate_top bb ze rj ki xn vq">
+            <h2 x-text="sectionTitle"
+                class="fk vj pr kk wm on/5 gq/2 bb _b">
+            </h2>
+            <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
+        </div>
+
+
+    </div>
+    <!-- Section Title End -->
+
+    <div class="bb ze ki xn 2xl:ud-px-0 jb" x-data="{filterTab: 1}">
+        <!-- Porject Tab -->
+        <div class="projects-tab _e bb tc uf wf xf cg rg hh rm vk xm si ti fc">
+            <button data-filter="*"
+            x-on:click="filterTab = 1"
+                    :class="{ 'gh lk' : filterTab === 1 }"
+                    class="project-tab-btn ek rg ml il vi mi">
+                All
+            </button>
+            <button data-filter=".branding"
+            x-on:click="filterTab = 2"
+                    :class="{ 'gh lk' : filterTab === 2 }"
+                    class="project-tab-btn ek rg ml il vi mi">
+                Branding Strategy
+            </button>
+            <button data-filter=".digital"
+            x-on:click="filterTab = 3"
+                    :class="{ 'gh lk' : filterTab === 3 }"
+                    class="project-tab-btn ek rg ml il vi mi">
+                Digital Experiences
+            </button>
+            <button data-filter=".ecommerce"
+            x-on:click="filterTab = 4"
+                    :class="{ 'gh lk' : filterTab === 4 }"
+                    class="project-tab-btn ek rg ml il vi mi">
+                Ecommerce
+            </button>
+        </div>
+
+        <!-- Projects item wrapper -->
+        <div class="projects-wrapper tc -ud-mx-5">
+            <div class="project-sizer"></div>
+            <!-- Project Item -->
+            <div class="project-item wi fb vd jn/2 to/3 branding ecommerce">
+                <div class="c i pg sg z-1">
+                    <img src="~/WebPageTemp/build/images/project-01.png" alt="Project" />
+
+                    <div class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10">
+                        <h4 class="ek tj kk hc">Photo Retouching</h4>
+                        <p>Branded Ecommerce</p>
+                        <a class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
+                           href="#">
+                            <svg class="th lm ml il" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Item -->
+            <div class="project-item wi fb vd jn/2 to/3 digital">
+                <div class="c i pg sg z-1">
+                    <img src="~/WebPageTemp/build/images/project-02.png" alt="Project" />
+
+                    <div class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10">
+                        <h4 class="ek tj kk hc">Photo Retouching</h4>
+                        <p>Branded Ecommerce</p>
+                        <a class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
+                           href="#">
+                            <svg class="th lm ml il" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Item -->
+            <div class="project-item wi fb vd jn/2 to/3 branding ecommerce">
+                <div class="c i pg sg z-1">
+                    <img src="~/WebPageTemp/build/images/project-04.png" alt="Project" />
+
+                    <div class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10">
+                        <h4 class="ek tj kk hc">Photo Retouching</h4>
+                        <p>Branded Ecommerce</p>
+                        <a class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
+                           href="#">
+                            <svg class="th lm ml il" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Item -->
+            <div class="project-item wi fb vd vo/3 digital ecommerce">
+                <div class="c i pg sg z-1">
+                    <img src="~/WebPageTemp/build/images/project-03.png" alt="Project" />
+
+                    <div class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10">
+                        <h4 class="ek tj kk hc">Photo Retouching</h4>
+                        <p>Branded Ecommerce</p>
+                        <a class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
+                           href="#">
+                            <svg class="th lm ml il" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ===== Projects End ===== -->
+<!-- ===== Testimonials Start ===== -->
+<section class="hj rp hr">
+ 

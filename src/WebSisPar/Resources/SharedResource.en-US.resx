@@ -129,11 +129,17 @@
   <data name="Let’s Stay Connected" xml:space="preserve">
     <value>Let’s Stay Connected</value>
   </data>
+  <data name="our terms of service and acknowledge you have read our privacy policy." xml:space="preserve">
+    <value>our terms of service and acknowledge you have read our privacy policy.</value>
+  </data>
   <data name="Products" xml:space="preserve">
     <value>Products</value>
   </data>
   <data name="Sign In" xml:space="preserve">
     <value>Sign In</value>
+  </data>
+  <data name="Sign in to your Account" xml:space="preserve">
+    <value>Sign in to your Account</value>
   </data>
   <data name="Sign Out" xml:space="preserve">
     <value>Sign Out</value>
