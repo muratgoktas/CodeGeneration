@@ -1,6 +1,6 @@
 ﻿namespace WebSisPar.Dtos.ProductDtos
 {
-    public class ResultProductDtos
+    public class ResultProductDto
     {
 
         public int Id { get; set; }
