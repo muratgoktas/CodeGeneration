@@ -49,6 +49,7 @@ namespace WebSisPar.Controllers
             return View();
             
         }
+        [HttpDelete]
         public async Task<IActionResult> DeleteCategory(int id)
         {
             var client = _httpClientFactory.CreateClient();

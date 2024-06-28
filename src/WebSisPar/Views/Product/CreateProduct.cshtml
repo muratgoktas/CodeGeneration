@@ -19,7 +19,7 @@
             <br />
             <label>Category Name</label>
 
-            @Html.DropDownListFor(mcs => mcs.CategoryId,(List<SelectListItem>)ViewBag.m,new {@class="from-control"})
+            @Html.DropDownListFor(mcs => mcs.CategoryId, (List<SelectListItem>)ViewBag.m, new { @class = "from-control border-0" })
             <br />
             <label>Product Description</label>
             <textarea asp-for="Description" class="form-control" rows="5"></textarea>

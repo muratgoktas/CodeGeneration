@@ -1,0 +1,58 @@
+﻿using Microsoft.AspNetCore.Mvc;
+
+using Newtonsoft.Json;
+using System.Text;
+using WebSisPar.Dtos.CategoryDtos;
+
+
+namespace WebSisPar.Controllers;
+
+public class BaseController<TResult, TCreate> : Controller
+   where TResult : class, new() 
+   where TCreate : class, new()
+     //where TUpdate : class, new()
+{ 
+  
+    private readonly IHttpClientFactory _httpClientFactory;
+    private readonly string _getValue;
+   
+
+    public BaseController(string getValue,IHttpClientFactory httpClientFactory)
+    {
+        _getValue = getValue;
+        _httpClientFactory = httpClientFactory;
+    }
+    public async Task<IActionResult> Index()
+    {
+
+        var client =  _httpClientFactory.CreateClient();
+        var responseMessage = await client.GetAsync(@"https://localhost:44334/api/"+_getValue);
+        if (responseMessage.IsSuccessStatusCode)
+        {
+            var jsonData = await responseMessage.Content.ReadAsStringAsync();
+            var values = JsonConvert.DeserializeObject<List<TResult>>(jsonData);
+            return View(values);
+        }
+        return View();
+    }
+    [HttpGet]
+    public IActionResult Create()
+    {
+        return View();
+    }
+    [HttpPost]
+    public async Task<IActionResult> Create(TCreate tCreate)
+    {
+        var client = _httpClientFactory.CreateClient();
+        var jsonData = JsonConvert.SerializeObject(tCreate);
+        StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+        var responseMessage = await client.PostAsync("https://localhost:44334/api/"+_getValue, stringContent);
+        if (responseMessage.IsSuccessStatusCode)
+        {
+            return RedirectToAction("Index");
+        }
+        return View();
+
+    }
+
+}

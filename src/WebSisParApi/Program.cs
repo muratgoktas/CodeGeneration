@@ -2,6 +2,7 @@ using WebApi.Models.DapperContext;
 using WebSisPar.Services;
 using WebSisParApi.Repositories.AboutReposiory;
 using WebSisParApi.Repositories.CategoryRepository;
+using WebSisParApi.Repositories.EmployeeRepository;
 using WebSisParApi.Repositories.ProductRepository;
 using WebSisParApi.Repositories.ServiceRepository;
 
@@ -15,6 +16,7 @@ builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
 builder.Services.AddTransient<IProductRepository,ProductRepository>();
 builder.Services.AddTransient<IAboutRepository,AboutRepository>();
 builder.Services.AddTransient<IServiceRepository, ServiceRepository>();
+builder.Services.AddTransient<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
