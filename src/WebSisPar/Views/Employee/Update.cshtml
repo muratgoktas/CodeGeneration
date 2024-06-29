@@ -1,0 +1,29 @@
+﻿@model UpdateEmployeeDto
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<div class="col-12">
+<div class="bg-light rounded h-100 p-4">
+    <h6 class="mb-4">Employee Updated</h6>
+    <form method="post">
+        <input type="hidden" asp-for="Id" />
+        <label>Category Name</label>
+        <input type="text" asp-for="Name" class="form-control border-0" />
+        <label>Employee Title</label>
+        <input type="text" asp-for="Title" class="form-control border-0" />
+        <label>Employee Mail</label>
+        <input type="text" asp-for="Mail" class="form-control border-0" />
+        <label>Employee PhoneNumber</label>
+        <input type="text" asp-for="PhoneNumber" class="form-control border-0" />
+        <label>Employee ImageUrl</label>
+        <input type="text" asp-for="ImageUrl" class="form-control border-0" />
+        <label>Employee ProfilUrl</label>
+        <input type="text" asp-for="ProfilUrl" class="form-control border-0" />
+        <br />
+        <button class="btn btn-success">Update Employee</button>
+    </form>
+</div>
+</div>
+

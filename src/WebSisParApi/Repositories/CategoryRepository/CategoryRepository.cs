@@ -1,8 +1,7 @@
 ﻿using WebApi.Models.DapperContext;
 using WebSisParApi.Dtos.CategoryDtos;
 using Dapper;
-using WebSisParApi.Dtos.CategoryDtos;
-using Microsoft.AspNetCore.Http.HttpResults;
+
 
 namespace WebSisParApi.Repositories.CategoryRepository
 {
@@ -31,9 +30,12 @@ namespace WebSisParApi.Repositories.CategoryRepository
         public async void DeleteCategory(int id)
         {
             var query = "Delete from dbo.Category Where Id =@id ";
+            var parameters = new DynamicParameters();
+            parameters.Add("@id", id);
             using (var connection = _context.CreateConnecon())
+        
             {
-                await connection.ExecuteAsync(query, new { id });
+                await connection.ExecuteAsync(query,parameters );
 
             }
         }

@@ -38,7 +38,7 @@ namespace WebSisParApi.Repositories.EmployeeRepository
 
         public async void DeleteEmployee(int id)
         {
-            var query = "Delete from dbo.Employee Where Id =@id ";
+            var query = "Delete from Employee Where Id =@id ";
             var parameters = new DynamicParameters();
             parameters.Add("@id",id);
             using (var connection = _context.CreateConnecon())
@@ -75,8 +75,8 @@ namespace WebSisParApi.Repositories.EmployeeRepository
         public async void UpdateEmployee(UpdateEmployeeDto updateEmployeeDto)
         {
            
-            var query = "Update Employee set Id=@id, Name = @name,Title=@title,Mail=@mail,PhoneNumber=@phoneNumber,"+
-                "ProfilUrl=@rofilUrl,UpdateDate=@UpdateDate Status=@status Where Id =@id";
+            var query = "Update Employee set Name = @name,Title=@title,Mail=@mail,PhoneNumber=@phoneNumber,"+
+                "ProfilUrl=@profilUrl,UpdateDate=@UpdateDate, Status=@status Where Id =@id";
             var parameters = new DynamicParameters();
             parameters.Add("@name", updateEmployeeDto.Name);
             parameters.Add("@title", updateEmployeeDto.Title);
@@ -84,7 +84,7 @@ namespace WebSisParApi.Repositories.EmployeeRepository
             parameters.Add("@phoneNumber", updateEmployeeDto.PhoneNumber);
             parameters.Add("@imageUrl", updateEmployeeDto.ImageUrl);
             parameters.Add("@profilUrl", updateEmployeeDto.ProfilUrl);
-            parameters.Add("@status", updateEmployeeDto.Status);
+            parameters.Add("@status", true);
             parameters.Add("@updateDate", DateTime.Today);
             parameters.Add("@id", updateEmployeeDto.Id);
             using (var connecion = _context.CreateConnecon())
