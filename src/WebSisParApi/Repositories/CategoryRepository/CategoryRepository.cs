@@ -29,7 +29,7 @@ namespace WebSisParApi.Repositories.CategoryRepository
 
         public async void DeleteCategory(int id)
         {
-            var query = "Delete from dbo.Category Where Id =@id ";
+            var query = "Delete from Category Where Id =@id ";
             var parameters = new DynamicParameters();
             parameters.Add("@id", id);
             using (var connection = _context.CreateConnecon())

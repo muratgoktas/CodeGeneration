@@ -1,9 +1,5 @@
 ﻿using Dapper;
-using Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.Blazor;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 using WebApi.Models.DapperContext;
-using WebSisParApi.Dtos.Abstract;
 using WebSisParApi.Dtos.EmployeeDtos;
 
 namespace WebSisParApi.Repositories.EmployeeRepository
@@ -17,7 +13,7 @@ namespace WebSisParApi.Repositories.EmployeeRepository
         {
             _context = context;
         }
-        public async void CreateEmployee(CreateEmployeeDto createEmployeeDto)
+        public async void Create(CreateEmployeeDto createEmployeeDto)
         {
             string query = "insert into dbo.Employee (Name,Title,Mail,PhoneNumber,ImageUrl,ProfilUrl,CreateDate,Status)"+
                 " values(@name,@title,@mail,@phoneNumber,@imageUrl,@profilUrl,@createDate,@status)";
@@ -28,7 +24,7 @@ namespace WebSisParApi.Repositories.EmployeeRepository
             parameters.Add("@phoneNumber", createEmployeeDto.PhoneNumber);
             parameters.Add("@imageUrl", createEmployeeDto.ImageUrl);
             parameters.Add("@profilUrl", createEmployeeDto.ProfilUrl);
-            parameters.Add("@createDate", DateTime.Today);
+            parameters.Add("@createDate", DateTime.UtcNow);
             parameters.Add("@status", true);
             using (var connection = _context.CreateConnecon())
             {
@@ -36,7 +32,7 @@ namespace WebSisParApi.Repositories.EmployeeRepository
             }
         }
 
-        public async void DeleteEmployee(int id)
+        public async void Delete(int id)
         {
             var query = "Delete from Employee Where Id =@id ";
             var parameters = new DynamicParameters();
@@ -48,7 +44,7 @@ namespace WebSisParApi.Repositories.EmployeeRepository
             }
         }
 
-        public async Task<List<ResultEmployeeDto>> GetAllEmployeeAsync()
+        public async Task<List<ResultEmployeeDto>> GetAllAsync()
         {
             string query = "Select * from dbo.Employee";
 
@@ -59,7 +55,7 @@ namespace WebSisParApi.Repositories.EmployeeRepository
             }
         }
 
-        public async Task<GetByIdEmployeeDto> GetEmployeeAsync(int id)
+        public async Task<GetByIdEmployeeDto> GetByIdAsync(int id)
         {
             var query = "Select * from Employee Where Id =@id";
             var parameters = new DynamicParameters();
@@ -72,7 +68,7 @@ namespace WebSisParApi.Repositories.EmployeeRepository
             }
         }
 
-        public async void UpdateEmployee(UpdateEmployeeDto updateEmployeeDto)
+        public async void Update(UpdateEmployeeDto updateEmployeeDto)
         {
            
             var query = "Update Employee set Name = @name,Title=@title,Mail=@mail,PhoneNumber=@phoneNumber,"+
@@ -85,7 +81,7 @@ namespace WebSisParApi.Repositories.EmployeeRepository
             parameters.Add("@imageUrl", updateEmployeeDto.ImageUrl);
             parameters.Add("@profilUrl", updateEmployeeDto.ProfilUrl);
             parameters.Add("@status", true);
-            parameters.Add("@updateDate", DateTime.Today);
+            parameters.Add("@updateDate", DateTime.UtcNow);
             parameters.Add("@id", updateEmployeeDto.Id);
             using (var connecion = _context.CreateConnecon())
             {

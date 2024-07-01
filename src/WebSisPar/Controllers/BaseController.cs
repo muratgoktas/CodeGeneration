@@ -55,12 +55,12 @@ public class BaseController<TResult, TCreate,TUpdate> : Controller
         return View();
 
     }
-    [HttpDelete]
+   
     public async Task<IActionResult> Delete(int id)
     {
         var client = _httpClientFactory.CreateClient();
 
-        var responseMessage = await client.DeleteAsync($"https://localhost:44334/api/" + _getValue + $"/{id}");
+        var responseMessage = await client.DeleteAsync($"https://localhost:44334/api/" + _getValue + "/" + $"{id}");
         if (responseMessage.IsSuccessStatusCode)
         {
             return RedirectToAction("Index");
@@ -71,7 +71,7 @@ public class BaseController<TResult, TCreate,TUpdate> : Controller
     public async Task<IActionResult> Update(int id)
     {
         var client = _httpClientFactory.CreateClient();
-        var responseMessage = await client.GetAsync($"https://localhost:44334/api/"+_getValue+$"/{id}");
+        var responseMessage = await client.GetAsync($"https://localhost:44334/api/"+_getValue+"/"+$"{id}");
         if (responseMessage.IsSuccessStatusCode)
         {
             var jsonData = await responseMessage.Content.ReadAsStringAsync();

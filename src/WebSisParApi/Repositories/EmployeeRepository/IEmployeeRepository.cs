@@ -1,13 +1,10 @@
 ﻿using WebSisParApi.Dtos.EmployeeDtos;
+using WebSisParApi.Repositories.BaseRepository;
 
 namespace WebSisParApi.Repositories.EmployeeRepository
 {
-    public interface IEmployeeRepository
+    public interface IEmployeeRepository:IBaseRepository<ResultEmployeeDto,CreateEmployeeDto,UpdateEmployeeDto,GetByIdEmployeeDto>
     {
-        Task<List<ResultEmployeeDto>> GetAllEmployeeAsync();
-        void CreateEmployee(CreateEmployeeDto CreateEmployeeDto);
-        void DeleteEmployee(int id);
-        void UpdateEmployee(UpdateEmployeeDto updateEmployeeDto);
-        Task<GetByIdEmployeeDto> GetEmployeeAsync(int id);
+      
     }
 }

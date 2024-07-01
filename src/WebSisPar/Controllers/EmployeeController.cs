@@ -7,7 +7,9 @@ using static System.Net.WebRequestMethods;
 
 namespace WebSisPar.Controllers;
 
-public class EmployeeController(IHttpClientFactory httpClientFactory) : BaseController<ResultEmployeeDto,CreateEmployeeDto,UpdateEmployeeDto>("Employees",httpClientFactory)
+public class EmployeeController(IHttpClientFactory httpClientFactory) 
+    : BaseController<ResultEmployeeDto,CreateEmployeeDto,UpdateEmployeeDto>
+    ("Employees",httpClientFactory)
 {
   
 }
