@@ -15,7 +15,7 @@ namespace WebSisParApi.Repositories.CategoryRepository
             _context = context;
         }
 
-        public async void CreateCategory(CreateCategoryDto categoryDto)
+        public async void Create(CreateCategoryDto categoryDto)
         {
             string query = "insert into dbo.Category (Name,Status) values(@name,@status)";
             var parameters = new DynamicParameters();
@@ -27,7 +27,7 @@ namespace WebSisParApi.Repositories.CategoryRepository
             }
         }
 
-        public async void DeleteCategory(int id)
+        public async void Delete(int id)
         {
             var query = "Delete from Category Where Id =@id ";
             var parameters = new DynamicParameters();
@@ -40,7 +40,7 @@ namespace WebSisParApi.Repositories.CategoryRepository
             }
         }
 
-        public async Task<GetByIdCategoryDto> GetCategoryAsync(int id)
+        public async Task<GetByIdCategoryDto> GetByIdAsync(int id)
         {
             var query = "Select * from Category Where Id =@id";
             var parameters = new DynamicParameters();
@@ -53,7 +53,7 @@ namespace WebSisParApi.Repositories.CategoryRepository
             }
         }
 
-        public async Task<List<ResultCategoryDto>> GetAllCategoryAsync()
+        public async Task<List<ResultCategoryDto>> GetAllAsync()
         {
             string query = "Select * from dbo.Category ";
            
@@ -64,7 +64,7 @@ namespace WebSisParApi.Repositories.CategoryRepository
             }
         }
 
-        public async void UpdateCategory(UpdateCategoryDto updateCategoryDto)
+        public async void Update(UpdateCategoryDto updateCategoryDto)
         {
             var query = "Update Category set Name = @name, Status=@status Where Id =@id";
             var parameters = new DynamicParameters();

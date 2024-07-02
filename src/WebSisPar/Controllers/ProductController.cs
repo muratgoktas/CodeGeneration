@@ -1,52 +1,32 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Newtonsoft.Json;
-using WebSisPar.Dtos.CategoryDtos;
 using WebSisPar.Dtos.ProductDtos;
 
-namespace WebSisPar.Controllers
+namespace WebSisPar.Controllers;
+
+public class ProductController(IHttpClientFactory httpClientFactory)
+: BaseController<ResultProductDto, CreateProductDto, UpdateProductDto>
+("Products", httpClientFactory)
 {
-    public class ProductController : Controller
-    {
-        private readonly IHttpClientFactory _httpClientFactory;
+    #region Later look
+    //[HttpGet]
+    //public async Task<IActionResult> CreateProduct()
+    //{
+    //    var client = _httpClientFactory.CreateClient();
+    //    var responseMessage = await client.GetAsync("https://localhost:44334/api/Categories");
+    //    var jsonData = await responseMessage.Content.ReadAsStringAsync();
+    //    var values = JsonConvert.DeserializeObject<List<ResultCategoryDto>>(jsonData);
 
-        public ProductController(IHttpClientFactory httpClientFactory)
-        {
-            _httpClientFactory = httpClientFactory;
-        }
+    //    List<SelectListItem> categoryValues = (from mcs in values.ToList()
+    //                                           select new SelectListItem
+    //                                           {
+    //                                               Text = mcs.Name,
+    //                                               Value = mcs.Id.ToString()
 
-        public async Task <IActionResult> Index()
-        {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:44334/api/Products/ProducListWithCategory");
-            
-            if (responseMessage.IsSuccessStatusCode)
-            {
-                var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var value = JsonConvert.DeserializeObject<List<ResultProductDto>>(jsonData);
-                return View(value);
+    //                                           }).ToList();
 
-            }
-            return View();
-        }
-        [HttpGet]
-        public async Task<IActionResult> CreateProduct()
-        {
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:44334/api/Categories");
-            var jsonData = await responseMessage.Content.ReadAsStringAsync();
-            var values = JsonConvert.DeserializeObject<List<ResultCategoryDto>>(jsonData);
-
-            List<SelectListItem> categoryValues = (from mcs in values.ToList()
-                                                   select new SelectListItem
-                                                   {
-                                                       Text = mcs.Name,
-                                                       Value = mcs.Id.ToString()
-
-                                                   }) .ToList();
-
-            ViewBag.m = categoryValues;
-            return View();
-        }
-    }
+    //    ViewBag.m = categoryValues;
+    //    return View();
+    //}
+    #endregion
+   
 }

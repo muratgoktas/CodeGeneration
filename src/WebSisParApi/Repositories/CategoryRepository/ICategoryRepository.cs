@@ -1,14 +1,10 @@
 ﻿using WebSisParApi.Dtos.CategoryDtos;
-using WebSisParApi.Dtos.CategoryDtos;
+using WebSisParApi.Repositories.BaseRepository;
 
 namespace WebSisParApi.Repositories.CategoryRepository
 {
-    public interface ICategoryRepository
+    public interface ICategoryRepository:IBaseRepository<ResultCategoryDto,CreateCategoryDto,UpdateCategoryDto,GetByIdCategoryDto>
     {
-        Task<List<ResultCategoryDto>> GetAllCategoryAsync();
-        void CreateCategory(CreateCategoryDto categoryDto);
-        void DeleteCategory(int id);
-        void UpdateCategory(UpdateCategoryDto updateCategoryDto);
-        Task<GetByIdCategoryDto> GetCategoryAsync(int id);
+        
     }
 }

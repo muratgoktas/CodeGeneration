@@ -18,31 +18,31 @@ namespace WebSisParApi.Controllers
         [HttpGet]
         public async Task<IActionResult> CategoryList() 
         {
-            var values = await _categoryRepository.GetAllCategoryAsync();
+            var values = await _categoryRepository.GetAllAsync();
             return Ok(values);
         }
         [HttpPost]
         public async Task<IActionResult> CreateCategory(CreateCategoryDto createCategoryDto)
         {
-             _categoryRepository.CreateCategory(createCategoryDto);
+             _categoryRepository.Create(createCategoryDto);
             return Ok("Category added.");
         }
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {
-            _categoryRepository.DeleteCategory(id);
+            _categoryRepository.Delete(id);
             return Ok("Category deleted.");
         }
         [HttpPut]
         public async Task<IActionResult> UpdateCategory(UpdateCategoryDto updateCategoryDto)
         {
-            _categoryRepository.UpdateCategory(updateCategoryDto);
+            _categoryRepository.Update(updateCategoryDto);
             return Ok("Category updated.");
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCategoryAsync(int id)
         {
-            var value = await _categoryRepository.GetCategoryAsync(id);
+            var value = await _categoryRepository.GetByIdAsync(id);
             return Ok(value);
         }
 

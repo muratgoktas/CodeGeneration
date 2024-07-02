@@ -19,20 +19,21 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach(var item in Model)
-                    { 
-                    <tr>
-                        <th scope="row">@item.Id</th>
-                        <td>@item.Name</td>
-                        <td>@(item.Status ?"Aktif":"Pasif")</td>
-                            <td><a href="/Category/DeleteCategory/@item.Id" class="btn btn-outline-danger">Delete</a></td>
-                            <td><a href="/Category/UpdateCategory/@item.Id" class="btn btn-outline-success">Update</a></td>
-                    </tr>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <th scope="row">@item.Id</th>
+                            <td>@item.Name</td>
+                            <td>@(item.Status ? "Aktif" : "Pasif")</td>
+                            <td><a href="/Category/Delete/@item.Id" class="btn btn-outline-danger">Delete</a></td>
+                            <td><a href="/Category/Update/@item.Id" class="btn btn-outline-success">Update</a></td>
+                        </tr>
                     }
-                   
+
                 </tbody>
             </table>
-            <td><a href="/Category/CreateCategory" class="btn btn-outline-info">New Record</a></td>
+            <td><a href="/Category/Create" class="btn btn-outline-info">New Record</a></td>
         </div>
     </div>
 </div>
+

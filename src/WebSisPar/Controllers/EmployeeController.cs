@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using WebSisPar.Dtos.EmployeeDtos;
-using static System.Net.WebRequestMethods;
+﻿using WebSisPar.Dtos.EmployeeDtos;
 
 
 
