@@ -1,5 +1,6 @@
 using WebApi.Models.DapperContext;
 using WebSisPar.Services;
+using WebSisParApi;
 using WebSisParApi.Repositories.AboutReposiory;
 using WebSisParApi.Repositories.CategoryRepository;
 using WebSisParApi.Repositories.EmployeeRepository;
@@ -22,6 +23,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -30,6 +32,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 

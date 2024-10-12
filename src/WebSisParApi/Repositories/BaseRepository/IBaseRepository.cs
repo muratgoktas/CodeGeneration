@@ -1,5 +1,4 @@
-﻿using System.Threading.Tasks;
-
+﻿
 namespace WebSisParApi.Repositories.BaseRepository
 {
     public interface IBaseRepository

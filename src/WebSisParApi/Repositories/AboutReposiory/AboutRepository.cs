@@ -1,7 +1,5 @@
 ﻿using Dapper;
 using WebApi.Models.DapperContext;
-using WebSisParApi.Dtos.CategoryDtos;
-using WebSisParApi.Dtos.CategoryDtos;
 using WebSisParApi.Dtos.AboutDtos;
 
 namespace WebSisParApi.Repositories.AboutReposiory

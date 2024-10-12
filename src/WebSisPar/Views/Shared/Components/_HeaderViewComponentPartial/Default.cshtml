@@ -7,7 +7,7 @@
     <div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
         <div class="vd to/4 tc wf yf">
 
-            <a href="Index">
+            <a href="/Core/Index">
                 <img class="b om imglogo" src="~/WebPageTemp/build/images/SisPar-Light.png"
                      srcset="~/WebPageTemp/build/images/SisPar-Light.png 300w,
                       ~/WebPageTemp/build/images/SisPar-Light-Middle.png 225w  "
@@ -39,11 +39,11 @@
              :class="{ 'd hh rm sr td ud qg ug jc yh': navigationOpen }">
             <nav>
                 <ul class="tc _o sf yo cg ep">
-                    <li><a href="Index" class="xl" :class="{ 'mk': page === 'home' }">@_localization.GetKey("Home").Value</a></li>
-                    <li><a href="Feature" class="xl">@_localization.GetKey("Features").Value</a></li>
-                    <li><a href="Product" class="xl">@_localization.GetKey("Products").Value</a></li>
-                    <li><a href="Support" class="xl">@_localization.GetKey("Support").Value</a></li>
-                    <li><a href="Solutation" class="xl">@_localization.GetKey("Solutations").Value</a></li>
+                    <li><a href="/Core/Index" class="xl" :class="{ 'mk': page === 'home' }">@_localization.GetKey("Home").Value</a></li>
+                    <li><a href="/Core/Feature" class="xl">@_localization.GetKey("Features").Value</a></li>
+                    <li><a href="/Core/Product" class="xl">@_localization.GetKey("Products").Value</a></li>
+                    <li><a href="/Core/Support" class="xl">@_localization.GetKey("Support").Value</a></li>
+                    <!-- <li><a href="/Core/Solutation" class="xl">@_localization.GetKey("Solutations").Value</a></li>-->
                     <li class="c i" x-data="{ dropdown: false }">
                         <a href="#"
                            class="xl tc wf yf bg"
@@ -126,8 +126,8 @@
                     </label>
                 </div>
 
-                <a href="SignIn" :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }" class="ek pk xl">@_localization.GetKey("Sign In").Value</a>
-                <a href="SignUp" :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' && stickyMenu }" class="lk gh dk rg tc wf xf _l gi hi">@_localization.GetKey("Sign Up").Value</a>
+                <a href="/Core/SignIn" :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }" class="ek pk xl">@_localization.GetKey("Sign In").Value</a>
+                <a href="/Core/SignUp" :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' && stickyMenu }" class="lk gh dk rg tc wf xf _l gi hi">@_localization.GetKey("Sign Up").Value</a>
             </div>
         </div>
     </div>

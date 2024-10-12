@@ -1,15 +1,17 @@
-﻿using WebSisParApi.Dtos.CategoryDtos;
-using WebSisParApi.Dtos.CategoryDtos;
-using WebSisParApi.Dtos.AboutDtos;
+﻿using WebSisParApi.Dtos.AboutDtos;
+using WebSisParApi.Repositories.BaseRepository;
 
 namespace WebSisParApi.Repositories.AboutReposiory
 {
     public interface IAboutRepository
     {
+       
+        void DeleteAbout(int id);
         Task<List<ResultAboutDto>> GetAllAboutAsync();
         void CreateAbout(CreateAboutDto createAboutDto);
-        void DeleteAbout(int id);
+        
         void UpdateAbout(UpdateAboutDto updateAboutDto);
         Task<GetByIdAboutDto> GetAboutAsync(int id);
+
     }
 }

@@ -4,8 +4,10 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-	
-	
+    <!-- ToDo :Publish etme sorunu: Sorun .NET 6 geçişinden sonra ortaya çıkıyor. Aynı dosya adıyla aynı hedef dizine birden 
+	fazla dosyanın kopyalanmasını engelleyen yeni bir özellik var. Onu kaldırıyor.-->
+     <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+	  
   </PropertyGroup>
 
   <ItemGroup>
